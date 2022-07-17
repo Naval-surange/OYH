@@ -13,7 +13,7 @@ async function Approve(id) {
     approved: true,
   };
   const response = await axios.post(
-    "http://localhost:4000/api/originator/update",
+    "/api/originator/update",
     data
   );
   if (response.status === 200) {

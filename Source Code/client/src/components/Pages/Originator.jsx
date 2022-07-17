@@ -85,7 +85,7 @@ function Originator() {
         console.log(newUser)
 
         axios
-            .post("http://localhost:4000/api/originator/register", newUser)
+            .post("/api/originator/register", newUser)
             .then((response) => {
                 alert("Registration Succesful!!");
                 console.log(response.data);

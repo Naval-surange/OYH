@@ -30,7 +30,7 @@ export default class CommunityCoach extends Component {
     };
 
     const response2 = await axios.post(
-      "http://localhost:4000/api/manager/auth",
+      "/api/manager/auth",
       d
     );
 
@@ -43,7 +43,7 @@ export default class CommunityCoach extends Component {
     if (this.state.authorized) {
       const data = { type: "pending" };
       const response = await axios.post(
-        "http://localhost:4000/api/originator/",
+        "/api/originator/",
         data
       );
       if (response.status === 200) {

@@ -19,7 +19,7 @@ export default class SpeculatorPage extends Component {
   }
   async componentDidMount() {
     const data = { type: "approved" };
-    const response = await axios.post("http://localhost:4000/api/originator", data);
+    const response = await axios.post("/api/originator", data);
     if (response.status === 200) {
       this.setState({ allnfts: response.data });
       this.setState({ isLoading: false });
