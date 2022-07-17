@@ -9,7 +9,7 @@ export default defineConfig({
     proxy: {
 
       '/api': {
-        target: 'http://localhost:4000',
+        target: 'http://ec2-54-153-1-194.us-west-1.compute.amazonaws.com:4000',
         changeOrigin: true,
         secure: false,      
       },
